@@ -48,6 +48,7 @@
 /* photo-container */
 
 .photo-container {
+  opacity: 0.8;
   display: flex;
   flex-direction: row;
 
@@ -62,6 +63,8 @@
 }
 .photo-container .first-group-photo img {
   width: 100%;
+  opacity: 0.8;
+  transition: 1s;
   vertical-align: middle;
   margin-bottom: 12px;
 }
@@ -70,6 +73,36 @@
 }
 .photo-container .second-group-photo img {
   width: 100%;
+  opacity: 0.8;
+  transition: 1s;
   vertical-align: middle;
   margin-bottom: 12px;
+}
+.photo-container img:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 550px) {
+  .header {
+    height: 300px;
+  }
+  .header .button-group button {
+    white-space: normal;
+    padding: 6px 12px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 2s;
+  }
+  .photo-container {
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 auto; */
+  }
+  .photo-container .first-group-photo {
+    margin-right: 0px;
+  }
 }
