@@ -3,3 +3,11 @@
   box-sizing: border-box;
   padding: 0;
 }
+.header {
+  height: 400px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
