@@ -42,3 +42,32 @@
 .button-group button:hover {
   background-color: #ccc;
 }
+.f-both {
+  float: both;
+}
+/* photo-container */
+
+.photo-container {
+  display: flex;
+  flex-direction: row;
+
+  width: 95vw;
+  margin: 100px auto;
+}
+.photo-container .first-group-photo {
+  flex: 1;
+  margin-right: 20px;
+}
+.photo-container .first-group-photo img {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 12px;
+}
+.photo-container .second-group-photo {
+  flex: 1;
+}
+.photo-container .second-group-photo img {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 12px;
+}
